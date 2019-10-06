@@ -51,7 +51,6 @@ public class KartMovement : MonoBehaviour {
         if (Mathf.Abs(horizontalMovement) > 0.1f) {
 
             float distance = Vector3.Distance(forward.normalized, velocity.normalized);
-            Debug.Log(forward.normalized.ToString() + " " + velocity.normalized.ToString() + " " + distance);
             float direction = distance < 1.2 || velocity.magnitude < 0.05 ? 1 : -1;
             float factor = Mathf.Lerp(minRotationSpeed, maxRotationSpeed, 1 - velocity.magnitude / maxSpeed);
 
