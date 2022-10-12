@@ -1,0 +1,7 @@
+﻿[*.cs]
+
+# UNT0008: Unity objects should not use null propagation
+dotnet_diagnostic.UNT0008.severity = none
+
+# IDE0055: Fix formatting
+dotnet_diagnostic.IDE0055.severity = error
